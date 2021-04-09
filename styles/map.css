@@ -19,6 +19,12 @@ body {
 
     font-family: 'Titillium Web', sans-serif;
     background-color: var(--color2);
+    background-image: url('../assets/background.jpeg');
+    background-repeat: repeat-x;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: ;
 }
 
 main {
@@ -47,6 +53,11 @@ section {
     font-size: 3rem;
     color: rgb(78, 255, 255);
 }
+
+section a {
+    color: rgb(0, 0, 0);
+}
+
 
 header {
     display: flex;
