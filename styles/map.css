@@ -43,6 +43,9 @@ section {
     margin-top: var(--gutter);
     margin-bottom: var(--gutter);
     border: solid 2px var(--color1);
+    font-family: 'New Tegomin', serif;
+    font-size: 3rem;
+    color: rgb(78, 255, 255);
 }
 
 header {
