@@ -5,7 +5,7 @@ const monsters = {
         top: '89%',
         left: '44%'
     },
-    image: 'monsters.jpg',
+    image: '../assets/monsters.jpeg',
     description: `
         Some foos run up on you demanding you join their monster squad or face fists... What do you do?
     `,
@@ -39,12 +39,12 @@ const monsters = {
 
 const dragon = {
     id: 'dragon',
-    title: 'A HAIRY!!! Dragon',
+    title: 'A Dragon with swag',
     map: {
         top: '17%',
         left: '37%'
     },
-    image: 'dragon.jpg',
+    image: '../assets/dragon.jpeg',
     audio: 'dragon.wav',
     action: 'dragon-growl.aiff',
     description: `
@@ -94,13 +94,13 @@ const dragon = {
 
 const treasure = {
     id: 'treasure',
-    title: 'A Golden Treasure',
+    title: 'The bag',
     map: {
         top: '31%',
         left: '5%'
     },
     prerequisites: ['dragon', 'monsters'],
-    image: 'treasure-chests.png',
+    image: '../assets/treasure-chests.png',
     audio: 'treasure-chests.wav',
     action: 'chest-opening.wav',
     description: `
