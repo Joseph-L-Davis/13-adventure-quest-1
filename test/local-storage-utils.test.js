@@ -83,7 +83,7 @@ test('should update user values', (expect) => {
         completed: {}
     };
 
-    localStorage.setItem('USER', JSON.stringify(user));
+    setUser(user);
 
     const choice = {
         hp: 25,
@@ -96,16 +96,15 @@ test('should update user values', (expect) => {
         name: 'mamba',
         class: 'dog',
         completed: {
-            dragon: true
+            banana: true
         }
     };
     
     //Act 
     // Call the function you're testing and set the result to a const
-    updateUserChoice('dragon', choice);
+    updateUserChoice('banana', choice);
 
-    const actual = JSON.parse(localStorage.getItem('USER'));
-    console.log('USER');
+    const actual = JSON.parse(getUser('USER'));
 
     //Expect
     // Make assertions about what is expected versus the actual result
