@@ -58,6 +58,11 @@ section a {
     color: rgb(0, 0, 0);
 }
 
+section div {
+    color: rgb(3, 3, 3);
+    font-weight: 900;
+}
+
 
 header {
     display: flex;
