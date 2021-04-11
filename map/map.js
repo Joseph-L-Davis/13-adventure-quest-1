@@ -11,6 +11,9 @@ for (let quest of quests) {
     
     aTag.href = `../quests/?id=${quest.id}`;
 
+    // aTag.style.position = 'absolute';
+
+
     section.append(aTag);
     console.log(aTag);
 }
