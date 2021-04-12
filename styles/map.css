@@ -24,7 +24,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    position: ;
+    position: relative;
 }
 
 main {
@@ -52,17 +52,40 @@ section {
     font-family: 'New Tegomin', serif;
     font-size: 3rem;
     color: rgb(78, 255, 255);
+    position: relative;
 }
 
-section a {
+section a:first-child {
     color: rgb(0, 0, 0);
+    position: absolute;
+    bottom: 40px;
+    right: 1100px
+}
+
+section a:nth-child(2) {
+    color: rgb(0, 0, 0);
+    position: absolute;
+    bottom: 40px;
+    left: 1100px
+}
+
+section a:last-child {
+    color: rgb(0, 0, 0);
+    position: absolute;
+    bottom: 500px;
 }
 
 
 header {
     display: flex;
-    justify-content: flex-end;
-    background-color: var(--color3);
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    position: absolute;
+    left: 170px;
+    bottom: 1100px;
+    background-color: black;
+    color: white;
     height: var(--header-height);
     box-shadow: var(--shadow);
 }
