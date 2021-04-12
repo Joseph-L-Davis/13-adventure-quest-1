@@ -24,7 +24,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    position: relative;
+    position: ;
 }
 
 main {
@@ -91,7 +91,8 @@ header {
 }
 
 #results {
-    width: 250px;
+    width: fit-content;
+    height: fit-content;
     display: flex;
     align-items: center;
     justify-content: center;
