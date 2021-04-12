@@ -15,5 +15,5 @@ for (let quest of quests) {
 
 
     section.append(aTag);
-    console.log(aTag);
+    // console.log(aTag);
 }

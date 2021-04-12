@@ -14,14 +14,15 @@ form.addEventListener('submit', (event) => {
 
     const user = {
         hp: 50,
-        gold: 0,
+        gold: 5,
         name: name,
         class: playerClass,
         completed: {}
     };
 
     setUser(user);
-    console.table(user);
+    
 
     window.location = './map';
+    console.log(user);
 });
