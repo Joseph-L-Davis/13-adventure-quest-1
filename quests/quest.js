@@ -1,6 +1,6 @@
 import quests from '../data.js';
 import { findById } from '../utils.js';
-import { getUser, updateUserChoice } from '../local-storage-utils.js';
+import { updateUserChoice } from '../local-storage-utils.js';
 
 // const user = getUser();
 const section = document.querySelector('section');
@@ -45,10 +45,8 @@ form.addEventListener('submit', (event) => {
     const userChoice = findById(quest.choices, choice);
     updateUserChoice(questId, userChoice);
     result.textContent = userChoice.result;
-    // alert(result);
-    // console.log(userChoice);
-    // alert(JSON.stringify(getUser(), true, 2));
-
+    alert(result.textContent);
+    window.location = '../map';
 });
 
 section.append(form);
