@@ -1,13 +1,13 @@
 const monsters = {
     id: 'monsters',
-    title: 'The Monster Squad',
+    title: 'The Goon Squad',
     map: {
         top: '89%',
         left: '44%'
     },
     image: '../assets/monsters.jpeg',
     description: `
-        Some foos run up on you demanding you join their monster squad or face fists... What do you do?
+        Some foos run up on you demanding you join their goon squad or face fists... What do you do?
     `,
     choices: [{
         id: 'negotiate',
@@ -27,10 +27,9 @@ const monsters = {
         gold: 50
     }, {
         id: 'run',
-        description: 'Run away like good Sir Robin',
+        description: 'Book it!',
         result: `
-            As you make a dash for the door a giant spider descends and take a bite of flesh,
-            causing 50 hp damage.
+            You point somewhere in the distance and say 'What is that?!' They all turn while you high tail it the other direction. Unfortunately you run directly into oncoming traffic and SPLAT! You lose 50hp.
         `,
         hp: -50,
         gold: 0
