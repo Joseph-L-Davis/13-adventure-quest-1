@@ -24,5 +24,5 @@ export function updateUserChoice(questId, choice) {
 
     user.completed[questId] = true;
 
-    setUser();
+    setUser(user);
 }

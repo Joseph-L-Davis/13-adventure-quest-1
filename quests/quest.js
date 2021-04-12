@@ -1,6 +1,6 @@
 import quests from '../data.js';
 import { findById } from '../utils.js';
-import { getUser, updateUserChoice } from '../local-storage-utils.js';
+import { updateUserChoice } from '../local-storage-utils.js';
 
 // const user = getUser();
 const section = document.querySelector('section');
@@ -9,7 +9,7 @@ const searchParams = new URLSearchParams(window.location.search);
 
 const questId = searchParams.get('id');
 const quest = findById(quests, questId);
-console.log(quest);
+// console.log(quest);
 
 const h1 = document.createElement('h1');
 h1.textContent = quest.title;
@@ -40,15 +40,13 @@ for (let choice of quest.choices) {
 form.addEventListener('submit', (event) => {
     event.preventDefault();
     const formData = new FormData(form);
-    console.log(formData);
     const choice = formData.get('choice');  //This part messed me up, this choice needed to match choice on line 36
+    console.log(choice);
     const userChoice = findById(quest.choices, choice);
     updateUserChoice(questId, userChoice);
     result.textContent = userChoice.result;
-    // alert(result);
-    console.log(userChoice);
-    // alert(JSON.stringify(getUser(), true, 2));
-
+    alert(result.textContent);
+    window.location = '../map';
 });
 
 section.append(form);
