@@ -2,7 +2,6 @@ import quests from '../data.js';
 import { findById } from '../utils.js';
 import { updateUserChoice } from '../local-storage-utils.js';
 
-// const user = getUser();
 const section = document.querySelector('section');
 const form = document.createElement('form');
 const searchParams = new URLSearchParams(window.location.search);

@@ -1,3 +1,4 @@
+import quests from './data.js';
 //  MAGIC STRING
 const USER = 'USER';
 
@@ -25,4 +26,15 @@ export function updateUserChoice(questId, choice) {
     user.completed[questId] = true;
 
     setUser(user);
+}
+
+export function questsComplete() {
+    const user = getUser();
+
+    for (let quest of quests) {
+        if (!user.completed[quest.id]) {
+            return false;
+        }
+    }
+    return true;
 }

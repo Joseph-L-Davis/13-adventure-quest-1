@@ -1,5 +1,5 @@
 // import functions and grab DOM elements
-import { setUser } from './local-storage-utils.js';
+import { setUser } from '../local-storage-utils.js';
 const form = document.querySelector('form');
 
 //  create even listener for form. create default user data
@@ -21,8 +21,6 @@ form.addEventListener('submit', (event) => {
     };
 
     setUser(user);
-    
-
     window.location = './map';
     console.log(user);
 });

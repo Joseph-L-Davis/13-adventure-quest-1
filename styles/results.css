@@ -24,15 +24,18 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    position: ;
+    position: relative;
 }
 
 main {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
-    margin-bottom: calc(var(--footer-height));
+    justify-content: center;
+    font-size: 2rem;
+    width: fit-content;
+    height: fit-content;
+    background-color: black;
+    color: white;
 
 }
 
@@ -53,6 +56,11 @@ section {
     font-size: 3rem;
     color: rgb(78, 255, 255);
     position: relative;
+}
+
+button {
+    font-size: 2rem;
+    cursor: pointer;
 }
 
 section a:first-child {
@@ -90,15 +98,6 @@ header {
     box-shadow: var(--shadow);
 }
 
-#results {
-    width: fit-content;
-    height: fit-content;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 2rem;
-}
-
 footer {
     display: flex;
     justify-content: flex-end;
@@ -110,14 +109,6 @@ footer {
 h2 {
     font-size: 1.8rem;
     font-weight: bold;
-}
-
-.gutter-right {
-    margin-right: 20px;
-}
-
-.main-logo {
-    animation: pulse 5s infinite ease-in-out;
 }
 
 header img {
