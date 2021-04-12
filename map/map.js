@@ -19,9 +19,15 @@ if (userIsDead || questsComplete()) {
 for (let quest of quests) {
     const aTag = document.createElement('a');
 
-    aTag.textContent = quest.title;
-    
+    aTag.id = quest.id;
+
     aTag.href = `../quests/?id=${quest.id}`;
 
+    if (user.completed[quest.id]) {
+        aTag.textContent = '';
+    } else {
+        aTag.textContent = quest.title;
+    }
     section.append(aTag);
+    
 }

@@ -61,6 +61,7 @@ section {
 button {
     font-size: 2rem;
     cursor: pointer;
+    margin: 15px;
 }
 
 section a:first-child {
