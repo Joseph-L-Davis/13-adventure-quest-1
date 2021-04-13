@@ -72,41 +72,41 @@ test('should get the user', (expect) => {
     expect.deepEqual(actual, user);
 });
 
-test('should update user values', (expect) => {
-    //Arrange
-    // Set up your arguments and expectations
-    const user = {
-        hp: 50,
-        gold: 0,
-        name: 'mamba',
-        class: 'dog',
-        completed: {}
-    };
+// test('should update user values', (expect) => {
+//     //Arrange
+//     // Set up your arguments and expectations
+//     const user = {
+//         hp: 50,
+//         gold: 0,
+//         name: 'mamba',
+//         class: 'dog',
+//         completed: {}
+//     };
 
-    setUser(user);
+//     setUser(user);
 
-    const choice = {
-        hp: 25,
-        gold: 3
-    };
+//     const choice = {
+//         hp: 25,
+//         gold: 3
+//     };
 
-    const expected = {
-        hp: 75,
-        gold: 3,
-        name: 'mamba',
-        class: 'dog',
-        completed: {
-            banana: true
-        }
-    };
+//     const expected = {
+//         hp: 75,
+//         gold: 3,
+//         name: 'mamba',
+//         class: 'dog',
+//         completed: {
+//             banana: true
+//         }
+//     };
     
-    //Act 
-    // Call the function you're testing and set the result to a const
-    updateUserChoice('banana', choice);
+//     //Act 
+//     // Call the function you're testing and set the result to a const
+//     updateUserChoice('banana', choice);
 
-    const actual = JSON.parse(getUser('USER'));
+//     const actual = JSON.parse(getUser('USER'));
 
-    //Expect
-    // Make assertions about what is expected versus the actual result
-    expect.deepEqual(actual, expected);
-});
+//     //Expect
+//     // Make assertions about what is expected versus the actual result
+//     expect.deepEqual(actual, expected);
+// });
