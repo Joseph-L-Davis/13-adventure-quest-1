@@ -1,4 +1,4 @@
-import { getUser, setUser, updateUserChoice } from '../local-storage-utils.js';
+import { getUser, setUser } from '../local-storage-utils.js';
 
 
 const test = QUnit.test;
