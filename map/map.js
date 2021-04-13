@@ -5,8 +5,6 @@ const user = getUser();
 
 const section = document.querySelector('section');
 const results = document.querySelector('#results');
-const hp = document.querySelector('#hp');
-const gold = document.querySelector('#gold');
 results.textContent = `HP: ${user.hp}---Gold: ${user.gold}`;
 
 // Check if user is dead
